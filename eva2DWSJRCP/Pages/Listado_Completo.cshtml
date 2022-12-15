@@ -1,0 +1,61 @@
+﻿@page
+@model eva2DWSJRCP.Pages.Listado_CompletoModel
+
+@{
+    ViewData["Title"] = "Listado_Completo";
+}
+
+<h1>LISTADO COMPLETO</h1>
+
+<!--Enlace para nuevo usuario-->
+<p>
+    <a asp-page="/Nuevo_Registro">Crear Nuevo Registro</a>
+</p>
+<!--Cabecera de la tabla para presentar los datos-->
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EvaTchNotasEvaluacion[0].MdUuid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EvaTchNotasEvaluacion[0].MdFch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EvaTchNotasEvaluacion[0].CodAlumno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EvaTchNotasEvaluacion[0].NotaEvaluacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EvaTchNotasEvaluacion[0].CodEvaluacionNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <!--Mostramos cada uno de los elementos que recogimos en la lista del controlador-->
+    <tbody>
+@foreach (var item in Model.EvaTchNotasEvaluacion) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MdUuid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MdFch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodAlumno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NotaEvaluacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodEvaluacionNavigation.CodEvaluacion)
+            </td>
+            <td>|
+                <a asp-page="./Details" asp-route-id="@item.IdNotaEvaluacion">Details</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

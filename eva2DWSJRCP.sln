@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eva2DWSJRCP", "eva2DWSJRCP\eva2DWSJRCP.csproj", "{BF451220-7465-4C4C-8AF9-891E9B81466E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityBasicoDAL", "EntityBasicoDAL\EntityBasicoDAL.csproj", "{E0824828-5F59-442E-AFEA-01BF6BFA1EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF451220-7465-4C4C-8AF9-891E9B81466E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF451220-7465-4C4C-8AF9-891E9B81466E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF451220-7465-4C4C-8AF9-891E9B81466E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF451220-7465-4C4C-8AF9-891E9B81466E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0824828-5F59-442E-AFEA-01BF6BFA1EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0824828-5F59-442E-AFEA-01BF6BFA1EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0824828-5F59-442E-AFEA-01BF6BFA1EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0824828-5F59-442E-AFEA-01BF6BFA1EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {899B6CF8-1B7D-48D9-8030-DA40626D0078}
+	EndGlobalSection
+EndGlobal
