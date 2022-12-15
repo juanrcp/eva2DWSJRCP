@@ -24,6 +24,7 @@ namespace eva2DWSJRCP.Pages
             return Page();
         }
 
+        //Con la etiqueta la unimos con la vista
         [BindProperty]
         public EvaTchNotasEvaluacion EvaTchNotasEvaluacion { get; set; }
         
